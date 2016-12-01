@@ -5,6 +5,7 @@
 #import "ViewController.h"
 #import "TableViewCell.h"
 #import "UIImageView+URL.h"
+#import "PlayerViewController.h"
 
 NSString *const videosURL = @"http://dev.nexeven.se/AgentValidation/iOS/assetList.plist";
 
@@ -54,7 +55,7 @@ NSString *const videosURL = @"http://dev.nexeven.se/AgentValidation/iOS/assetLis
     AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:[[NSURL alloc] initWithString:url]];
     
     AVPlayer *player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
-    AVPlayerViewController *playerViewController = [[AVPlayerViewController alloc] init];
+    PlayerViewController *playerViewController = [[PlayerViewController alloc] init];
     playerViewController.player = player;
     playerViewController.allowsPictureInPicturePlayback = YES;
     playerViewController.showsPlaybackControls = YES;

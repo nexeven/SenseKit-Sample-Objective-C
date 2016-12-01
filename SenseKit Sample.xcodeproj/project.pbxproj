@@ -17,6 +17,7 @@
 		B06312B01DEF5B67007067DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B06312AE1DEF5B67007067DD /* LaunchScreen.storyboard */; };
 		B06312B91DEF5F2B007067DD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312B81DEF5F2B007067DD /* TableViewCell.m */; };
 		B06312BC1DEF67DB007067DD /* UIImageView+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312BB1DEF67DB007067DD /* UIImageView+URL.m */; };
+		B06C4B841DF054EF00E2DA3C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06C4B831DF054EF00E2DA3C /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		B06312B81DEF5F2B007067DD /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		B06312BA1DEF67DB007067DD /* UIImageView+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+URL.h"; sourceTree = "<group>"; };
 		B06312BB1DEF67DB007067DD /* UIImageView+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+URL.m"; sourceTree = "<group>"; };
+		B06C4B821DF054EF00E2DA3C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		B06C4B831DF054EF00E2DA3C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				B06312B81DEF5F2B007067DD /* TableViewCell.m */,
 				B06312A61DEF5B67007067DD /* ViewController.h */,
 				B06312A71DEF5B67007067DD /* ViewController.m */,
+				B06C4B821DF054EF00E2DA3C /* PlayerViewController.h */,
+				B06C4B831DF054EF00E2DA3C /* PlayerViewController.m */,
 				B06312A91DEF5B67007067DD /* Main.storyboard */,
 				B06312AC1DEF5B67007067DD /* Assets.xcassets */,
 				B06312AE1DEF5B67007067DD /* LaunchScreen.storyboard */,
@@ -185,6 +190,7 @@
 				B06312B91DEF5F2B007067DD /* TableViewCell.m in Sources */,
 				B06312A51DEF5B67007067DD /* AppDelegate.m in Sources */,
 				B06312A21DEF5B67007067DD /* main.m in Sources */,
+				B06C4B841DF054EF00E2DA3C /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
