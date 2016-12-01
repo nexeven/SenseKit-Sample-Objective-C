@@ -57,8 +57,6 @@ NSString *const videosURL = @"http://dev.nexeven.se/AgentValidation/iOS/assetLis
     AVPlayer *player = [[AVPlayer alloc] initWithPlayerItem:playerItem];
     PlayerViewController *playerViewController = [[PlayerViewController alloc] init];
     playerViewController.player = player;
-    playerViewController.allowsPictureInPicturePlayback = YES;
-    playerViewController.showsPlaybackControls = YES;
     
     NECustomMetadata *pair1 = [NECustomMetadata alloc];
     pair1.key = @"AMK1";
@@ -89,11 +87,15 @@ NSString *const videosURL = @"http://dev.nexeven.se/AgentValidation/iOS/assetLis
 }
 
 - (void)itemDidPlayToEndTime {
-    __weak ViewController *weakSelf = self;
-    
-    [NSTimer scheduledTimerWithTimeInterval:1 repeats:NO block:^(NSTimer * _Nonnull timer) {
-        [weakSelf dismissViewControllerAnimated:true completion:nil];
-    }];
+    [NSTimer scheduledTimerWithTimeInterval:1
+                                     target:self
+                                   selector:@selector(timerDidFire)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void)timerDidFire {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 @end
