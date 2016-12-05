@@ -7,7 +7,7 @@
 #import "UIImageView+URL.h"
 #import "PlayerViewController.h"
 
-NSString *const videosURL = @"http://dev.nexeven.se/AgentValidation/iOS/assetList.plist";
+NSString *const videosURL = @"http://static.nexeven.com/SenseKit/assetList.plist";
 
 @interface ViewController ()
 
