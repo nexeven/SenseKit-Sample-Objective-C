@@ -8,8 +8,13 @@
 @implementation PlayerViewController
 
 - (void)viewWillDisappear:(BOOL)animated {
-    [NESenseKit stopPlayback];
+    [self.senseAgent endSession];
     [super viewWillDisappear:animated];
+}
+
+- (void)dealloc
+{
+    self.senseAgent = nil;
 }
 
 @end

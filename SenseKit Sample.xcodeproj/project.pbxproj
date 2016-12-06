@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0351A601DEF7356004F8D53 /* SenseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0351A5F1DEF7356004F8D53 /* SenseKit.framework */; };
-		B0351A611DEF7356004F8D53 /* SenseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0351A5F1DEF7356004F8D53 /* SenseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B06312A21DEF5B67007067DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312A11DEF5B67007067DD /* main.m */; };
 		B06312A51DEF5B67007067DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312A41DEF5B67007067DD /* AppDelegate.m */; };
 		B06312A81DEF5B67007067DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312A71DEF5B67007067DD /* ViewController.m */; };
@@ -18,6 +16,8 @@
 		B06312B91DEF5F2B007067DD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312B81DEF5F2B007067DD /* TableViewCell.m */; };
 		B06312BC1DEF67DB007067DD /* UIImageView+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = B06312BB1DEF67DB007067DD /* UIImageView+URL.m */; };
 		B06C4B841DF054EF00E2DA3C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06C4B831DF054EF00E2DA3C /* PlayerViewController.m */; };
+		B7FFC0161DF71A7D00A38E82 /* SenseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FFC0151DF71A7D00A38E82 /* SenseKit.framework */; };
+		B7FFC0171DF71A7D00A38E82 /* SenseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B7FFC0151DF71A7D00A38E82 /* SenseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0351A611DEF7356004F8D53 /* SenseKit.framework in Embed Frameworks */,
+				B7FFC0171DF71A7D00A38E82 /* SenseKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +35,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B0351A5F1DEF7356004F8D53 /* SenseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseKit.framework; path = Frameworks/SenseKit.framework; sourceTree = "<group>"; };
 		B063129D1DEF5B67007067DD /* SenseKit Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SenseKit Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B06312A11DEF5B67007067DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B06312A31DEF5B67007067DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		B06312BB1DEF67DB007067DD /* UIImageView+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+URL.m"; sourceTree = "<group>"; };
 		B06C4B821DF054EF00E2DA3C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		B06C4B831DF054EF00E2DA3C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		B7FFC0151DF71A7D00A38E82 /* SenseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenseKit.framework; path = Carthage/Build/iOS/SenseKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0351A601DEF7356004F8D53 /* SenseKit.framework in Frameworks */,
+				B7FFC0161DF71A7D00A38E82 /* SenseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +69,7 @@
 		B06312941DEF5B67007067DD = {
 			isa = PBXGroup;
 			children = (
-				B0351A5F1DEF7356004F8D53 /* SenseKit.framework */,
+				B7FFC0141DF71A5F00A38E82 /* Frameworks */,
 				B063129F1DEF5B67007067DD /* SenseKit Sample */,
 				B063129E1DEF5B67007067DD /* Products */,
 			);
@@ -111,6 +111,14 @@
 				B06312A11DEF5B67007067DD /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7FFC0141DF71A5F00A38E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7FFC0151DF71A7D00A38E82 /* SenseKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,9 +316,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "SenseKit Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -324,9 +335,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "SenseKit Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

@@ -1,6 +1,0 @@
-framework module SenseKit {
-  umbrella header "SenseKit.h"
-
-  export *
-  module * { export * }
-}

@@ -66,7 +66,7 @@ NSString *const videosURL = @"http://static.nexeven.com/SenseKit/assetList.plist
     pair2.key = @"CMK1";
     pair2.values = @[@"CMV1", @"CMV11"];
     
-    [NESenseKit pluginWithAVPlayer:playerViewController.player
+    NESenseAgent *senseAgent = [[NESenseAgent alloc] initWithAVPlayer:playerViewController.player
                            assetId:assetId
                         serverHost:@"https://sense.nexeven.io"
                             nxeCID:@"BBQCID"
@@ -75,6 +75,8 @@ NSString *const videosURL = @"http://static.nexeven.com/SenseKit/assetList.plist
                           viewerId:@"jorgenS"
                      assetMetadata:@[pair1]
                     viewerMetadata:@[pair2]];
+
+    playerViewController.senseAgent = senseAgent;
     
     [player play];
     
