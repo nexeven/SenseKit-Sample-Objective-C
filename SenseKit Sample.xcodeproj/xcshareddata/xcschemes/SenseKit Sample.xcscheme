@@ -69,8 +69,8 @@
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "SENSEKIT_DEBUG"
-            value = "1"
-            isEnabled = "NO">
+            value = "true"
+            isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
