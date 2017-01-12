@@ -41,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>SENSEKIT_PIE_ENABLED</key>
+	<true/>
 </dict>
 </plist>
